@@ -18,8 +18,9 @@ try {
 
 Write-Host ""
 Write-Host "Building project..." -ForegroundColor Yellow
+$Root = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
 try {
-    dotnet build --configuration Release
+    dotnet build "$Root\ReActAgent-NetCore.sln" --configuration Release
     if ($LASTEXITCODE -ne 0) {
         throw "Build failed"
     }
@@ -36,7 +37,7 @@ Write-Host "Note: Ensure Ollama service is running and qwen2.5-coder:7b model is
 Write-Host ""
 
 try {
-    dotnet run --configuration Release
+    dotnet run --configuration Release --project "$Root\ReActAgent-NetCore.csproj"
 } catch {
     Write-Host "❌ Startup failed: $($_.Exception.Message)" -ForegroundColor Red
 }

@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\github\\exercisebook\\AI\\ReActAgent-NetCore\\",
+  "WorkspaceRootPath": "G:\\github\\ReActAgent-NetCore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B2F8E43-C3E7-EAB6-8012-919855759519}|ReActAgent-NetCore.csproj|g:\\github\\exercisebook\\ai\\reactagent-netcore\\src\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{1B2F8E43-C3E7-EAB6-8012-919855759519}|ReActAgent-NetCore.csproj|g:\\github\\reactagent-netcore\\src\\application\\cli\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B2F8E43-C3E7-EAB6-8012-919855759519}|ReActAgent-NetCore.csproj|solutionrelative:src\\application\\cli\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B2F8E43-C3E7-EAB6-8012-919855759519}|ReActAgent-NetCore.csproj|g:\\github\\reactagent-netcore\\src\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1B2F8E43-C3E7-EAB6-8012-919855759519}|ReActAgent-NetCore.csproj|solutionrelative:src\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -35,10 +39,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\github\\ReActAgent-NetCore\\src\\Application\\CLI\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Application\\CLI\\Program.cs",
+              "ToolTip": "G:\\github\\ReActAgent-NetCore\\src\\Application\\CLI\\Program.cs",
+              "RelativeToolTip": "src\\Application\\CLI\\Program.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAUwJoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T08:04:01.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
-              "DocumentMoniker": "G:\\github\\exercisebook\\AI\\ReActAgent-NetCore\\src\\appsettings.json",
+              "DocumentMoniker": "G:\\github\\ReActAgent-NetCore\\src\\appsettings.json",
               "RelativeDocumentMoniker": "src\\appsettings.json",
-              "ToolTip": "G:\\github\\exercisebook\\AI\\ReActAgent-NetCore\\src\\appsettings.json",
+              "ToolTip": "G:\\github\\ReActAgent-NetCore\\src\\appsettings.json",
               "RelativeToolTip": "src\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",

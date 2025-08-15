@@ -18,10 +18,12 @@ try {
 
 Write-Host ""
 
+$Root = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
+
 # 构建项目
 Write-Host "正在构建项目..." -ForegroundColor Yellow
 try {
-    dotnet build --configuration Release
+    dotnet build "$Root\ReActAgent-NetCore.sln" --configuration Release
     if ($LASTEXITCODE -ne 0) {
         throw "构建失败"
     }
@@ -40,7 +42,7 @@ Write-Host "提示：确保Ollama服务正在运行，且已下载qwen2.5-coder:
 Write-Host ""
 
 try {
-    dotnet run --configuration Release
+    dotnet run --configuration Release --project "$Root\ReActAgent-NetCore.csproj"
 } catch {
     Write-Host "❌ 启动失败: $($_.Exception.Message)" -ForegroundColor Red
 }

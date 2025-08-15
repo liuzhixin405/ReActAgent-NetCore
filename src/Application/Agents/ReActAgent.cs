@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using ReActAgentNetCore.Core.Models;
 using ReActAgentNetCore.Infrastructure.Tools;
+using System.Net.Http;
 
 namespace ReActAgentNetCore.Application.Agents
 {
@@ -27,6 +28,7 @@ namespace ReActAgentNetCore.Application.Agents
             _projectDirectory = projectDirectory;
             _ollamaBaseUrl = ollamaBaseUrl;
             _httpClient = new HttpClient();
+            _httpClient.Timeout = TimeSpan.FromMinutes(60);
         }
 
         public async Task<string> RunAsync(string userInput)
@@ -46,8 +48,13 @@ namespace ReActAgentNetCore.Application.Agents
                 iterationCount++;
                 Console.WriteLine($"\n🔄 迭代次数: {iterationCount}/{maxIterations}");
 
-                // 调用模型
-                var content = await CallModelAsync(messages);
+                // 调用模型（流式输出）
+                Console.WriteLine("\n🧠 模型响应(流式)：");
+                var content = await CallModelStreamingAsync(messages, token =>
+                {
+                    Console.Write(token);
+                });
+                Console.WriteLine();
 
                 // 提取Thought
                 var thoughtMatch = Regex.Match(content, @"<thought>(.*?)</thought>", RegexOptions.Singleline);
@@ -139,6 +146,74 @@ namespace ReActAgentNetCore.Application.Agents
             catch (Exception ex)
             {
                 throw new Exception($"调用Ollama模型失败：{ex.Message}");
+            }
+        }
+
+        /// <summary>
+        /// 调用Ollama模型（流式输出）
+        /// </summary>
+        private async Task<string> CallModelStreamingAsync(List<ChatMessage> messages, Action<string>? onToken = null)
+        {
+            try
+            {
+                var request = new
+                {
+                    model = _model,
+                    messages = messages.Select(m => new { role = m.Role, content = m.Content }).ToArray(),
+                    stream = true
+                };
+
+                var json = JsonSerializer.Serialize(request);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                using var httpRequest = new HttpRequestMessage(HttpMethod.Post, $"{_ollamaBaseUrl}/api/chat") { Content = content };
+                using var response = await _httpClient.SendAsync(httpRequest, HttpCompletionOption.ResponseHeadersRead);
+                response.EnsureSuccessStatusCode();
+
+                await using var responseStream = await response.Content.ReadAsStreamAsync();
+                using var reader = new StreamReader(responseStream);
+
+                var sb = new StringBuilder();
+                while (!reader.EndOfStream)
+                {
+                    var line = await reader.ReadLineAsync();
+                    if (string.IsNullOrWhiteSpace(line))
+                    {
+                        continue;
+                    }
+
+                    JsonElement obj;
+                    try
+                    {
+                        obj = JsonSerializer.Deserialize<JsonElement>(line);
+                    }
+                    catch
+                    {
+                        continue;
+                    }
+
+                    if (obj.TryGetProperty("done", out var doneProp) && doneProp.ValueKind == JsonValueKind.True)
+                    {
+                        break;
+                    }
+
+                    if (obj.TryGetProperty("message", out var messageProp)
+                        && messageProp.TryGetProperty("content", out var contentProp))
+                    {
+                        var delta = contentProp.GetString() ?? string.Empty;
+                        if (!string.IsNullOrEmpty(delta))
+                        {
+                            sb.Append(delta);
+                            onToken?.Invoke(delta);
+                        }
+                    }
+                }
+
+                return sb.ToString();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"调用Ollama模型(流式)失败：{ex.Message}");
             }
         }
 

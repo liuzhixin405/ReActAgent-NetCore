@@ -5,6 +5,10 @@ echo    ReAct Agent - .NET Core Version
 echo ========================================
 echo.
 
+set "SCRIPT_DIR=%~dp0"
+for %%I in ("%SCRIPT_DIR%..\..") do set "ROOT_DIR=%%~fI"
+pushd "%ROOT_DIR%"
+
 echo Checking .NET environment...
 dotnet --version >nul 2>&1
 if %errorlevel% neq 0 (
@@ -31,7 +35,7 @@ if %errorlevel% neq 0 (
 )
 
 echo Building project...
-dotnet build --configuration Release
+dotnet build "%ROOT_DIR%\ReActAgent-NetCore.sln" --configuration Release
 if %errorlevel% neq 0 (
     echo ❌ Project build failed
     pause
@@ -50,5 +54,6 @@ echo.
 echo Press any key to start the program...
 pause >nul
 
-dotnet run --configuration Release
+dotnet run --configuration Release --project "%ROOT_DIR%\ReActAgent-NetCore.csproj"
+popd
 pause

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReActAgent-NetCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2914d6fd31553f7f39afc63ff59ffe9ce8ec726d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bfcb80af5a8e9c99023c1481952abb0143e632c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReActAgent-NetCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReActAgent-NetCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

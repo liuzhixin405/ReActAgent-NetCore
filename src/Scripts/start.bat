@@ -5,6 +5,10 @@ echo    ReAct智能体 - .NET Core版本
 echo ========================================
 echo.
 
+set "SCRIPT_DIR=%~dp0"
+for %%I in ("%SCRIPT_DIR%..\..") do set "ROOT_DIR=%%~fI"
+pushd "%ROOT_DIR%"
+
 echo 正在检查.NET环境...
 dotnet --version >nul 2>&1
 if %errorlevel% neq 0 (
@@ -31,7 +35,7 @@ if %errorlevel% neq 0 (
 )
 
 echo 正在构建项目...
-dotnet build --configuration Release
+dotnet build "%ROOT_DIR%\ReActAgent-NetCore.sln" --configuration Release
 if %errorlevel% neq 0 (
     echo ❌ 项目构建失败
     pause
@@ -49,5 +53,6 @@ echo.
 echo 按任意键启动程序...
 pause >nul
 
-dotnet run --configuration Release
+dotnet run --configuration Release --project "%ROOT_DIR%\ReActAgent-NetCore.csproj"
+popd
 pause
