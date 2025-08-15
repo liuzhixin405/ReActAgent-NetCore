@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\github\\ReActAgent-NetCore\\ReActAgent-NetCore.csproj": {}
+    "G:\\github\\ReActAgent-NetCore\\src\\Minimal\\MinimalAgent.csproj": {}
   },
   "projects": {
-    "G:\\github\\ReActAgent-NetCore\\ReActAgent-NetCore.csproj": {
+    "G:\\github\\ReActAgent-NetCore\\src\\Minimal\\MinimalAgent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\github\\ReActAgent-NetCore\\ReActAgent-NetCore.csproj",
-        "projectName": "ReActAgent-NetCore",
-        "projectPath": "G:\\github\\ReActAgent-NetCore\\ReActAgent-NetCore.csproj",
+        "projectUniqueName": "G:\\github\\ReActAgent-NetCore\\src\\Minimal\\MinimalAgent.csproj",
+        "projectName": "MinimalAgent",
+        "projectPath": "G:\\github\\ReActAgent-NetCore\\src\\Minimal\\MinimalAgent.csproj",
         "packagesPath": "D:\\NuGetPackages",
-        "outputPath": "G:\\github\\ReActAgent-NetCore\\obj\\",
+        "outputPath": "G:\\github\\ReActAgent-NetCore\\src\\Minimal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -50,20 +50,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.Binder": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.Json": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

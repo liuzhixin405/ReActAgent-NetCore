@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "G:\\github\\ReActAgent-NetCore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6B5D5FA3-5D7C-4A2B-9F64-22F3F4E2E2A9}|src\\Minimal\\MinimalAgent.csproj|g:\\github\\reactagent-netcore\\src\\minimal\\reactagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5D5FA3-5D7C-4A2B-9F64-22F3F4E2E2A9}|src\\Minimal\\MinimalAgent.csproj|solutionrelative:src\\minimal\\reactagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5D5FA3-5D7C-4A2B-9F64-22F3F4E2E2A9}|src\\Minimal\\MinimalAgent.csproj|g:\\github\\reactagent-netcore\\src\\minimal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5D5FA3-5D7C-4A2B-9F64-22F3F4E2E2A9}|src\\Minimal\\MinimalAgent.csproj|solutionrelative:src\\minimal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B2F8E43-C3E7-EAB6-8012-919855759519}|ReActAgent-NetCore.csproj|g:\\github\\reactagent-netcore\\src\\application\\cli\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B2F8E43-C3E7-EAB6-8012-919855759519}|ReActAgent-NetCore.csproj|solutionrelative:src\\application\\cli\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,19 +47,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ReActAgent.cs",
+              "DocumentMoniker": "G:\\github\\ReActAgent-NetCore\\src\\Minimal\\ReActAgent.cs",
+              "RelativeDocumentMoniker": "src\\Minimal\\ReActAgent.cs",
+              "ToolTip": "G:\\github\\ReActAgent-NetCore\\src\\Minimal\\ReActAgent.cs",
+              "RelativeToolTip": "src\\Minimal\\ReActAgent.cs",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAUwJoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T14:31:02.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\github\\ReActAgent-NetCore\\src\\Minimal\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Minimal\\Program.cs",
+              "ToolTip": "G:\\github\\ReActAgent-NetCore\\src\\Minimal\\Program.cs",
+              "RelativeToolTip": "src\\Minimal\\Program.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAUwG8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T14:05:05.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\github\\ReActAgent-NetCore\\src\\Application\\CLI\\Program.cs",
               "RelativeDocumentMoniker": "src\\Application\\CLI\\Program.cs",
               "ToolTip": "G:\\github\\ReActAgent-NetCore\\src\\Application\\CLI\\Program.cs",
               "RelativeToolTip": "src\\Application\\CLI\\Program.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAUwJoAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwJMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-15T08:04:01.212Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "G:\\github\\ReActAgent-NetCore\\src\\appsettings.json",
               "RelativeDocumentMoniker": "src\\appsettings.json",
@@ -59,8 +93,7 @@
               "RelativeToolTip": "src\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-15T03:52:00.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-15T03:52:00.865Z"
             }
           ]
         }
