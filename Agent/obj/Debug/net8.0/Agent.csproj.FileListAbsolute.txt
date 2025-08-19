@@ -1,0 +1,17 @@
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\bin\Debug\net8.0\Agent.exe
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\bin\Debug\net8.0\Agent.deps.json
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\bin\Debug\net8.0\Agent.runtimeconfig.json
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\bin\Debug\net8.0\Agent.dll
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\bin\Debug\net8.0\Agent.pdb
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\bin\Debug\net8.0\Newtonsoft.Json.dll
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\obj\Debug\net8.0\Agent.csproj.AssemblyReference.cache
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\obj\Debug\net8.0\Agent.GeneratedMSBuildEditorConfig.editorconfig
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\obj\Debug\net8.0\Agent.AssemblyInfoInputs.cache
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\obj\Debug\net8.0\Agent.AssemblyInfo.cs
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\obj\Debug\net8.0\Agent.csproj.CoreCompileInputs.cache
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\obj\Debug\net8.0\Agent.csproj.Up2Date
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\obj\Debug\net8.0\Agent.dll
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\obj\Debug\net8.0\refint\Agent.dll
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\obj\Debug\net8.0\Agent.pdb
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\obj\Debug\net8.0\Agent.genruntimeconfig.cache
+G:\code\VideoCode-main\VideoCode-main\AgentNetCore\Agent\obj\Debug\net8.0\ref\Agent.dll

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "9v+ivb+s6DM=",
+  "success": true,
+  "projectFilePath": "G:\\code\\VideoCode-main\\VideoCode-main\\AgentNetCore\\Agent\\Agent.csproj",
+  "expectedPackageFiles": [
+    "D:\\NuGetPackages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "D:\\NuGetPackages\\microsoft.netcore.app.ref\\8.0.14\\microsoft.netcore.app.ref.8.0.14.nupkg.sha512",
+    "D:\\NuGetPackages\\microsoft.windowsdesktop.app.ref\\8.0.14\\microsoft.windowsdesktop.app.ref.8.0.14.nupkg.sha512",
+    "D:\\NuGetPackages\\microsoft.aspnetcore.app.ref\\8.0.14\\microsoft.aspnetcore.app.ref.8.0.14.nupkg.sha512",
+    "D:\\NuGetPackages\\microsoft.netcore.app.host.win-x64\\8.0.14\\microsoft.netcore.app.host.win-x64.8.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

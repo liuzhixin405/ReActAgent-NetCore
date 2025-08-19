@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\code\\VideoCode-main\\VideoCode-main\\AgentNetCore\\Agent\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF9CCA9-6196-3F19-3B50-772B7E66CDE4}|Agent.csproj|g:\\code\\videocode-main\\videocode-main\\agentnetcore\\agent\\prompttemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF9CCA9-6196-3F19-3B50-772B7E66CDE4}|Agent.csproj|solutionrelative:prompttemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF9CCA9-6196-3F19-3B50-772B7E66CDE4}|Agent.csproj|g:\\code\\videocode-main\\videocode-main\\agentnetcore\\agent\\reactagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF9CCA9-6196-3F19-3B50-772B7E66CDE4}|Agent.csproj|solutionrelative:reactagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF9CCA9-6196-3F19-3B50-772B7E66CDE4}|Agent.csproj|g:\\code\\videocode-main\\videocode-main\\agentnetcore\\agent\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{AEF9CCA9-6196-3F19-3B50-772B7E66CDE4}|Agent.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF9CCA9-6196-3F19-3B50-772B7E66CDE4}|Agent.csproj|g:\\code\\videocode-main\\videocode-main\\agentnetcore\\agent\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF9CCA9-6196-3F19-3B50-772B7E66CDE4}|Agent.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF9CCA9-6196-3F19-3B50-772B7E66CDE4}|Agent.csproj|g:\\code\\videocode-main\\videocode-main\\agentnetcore\\agent\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEF9CCA9-6196-3F19-3B50-772B7E66CDE4}|Agent.csproj|solutionrelative:tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "README.md",
+              "DocumentMoniker": "G:\\code\\VideoCode-main\\VideoCode-main\\AgentNetCore\\Agent\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "G:\\code\\VideoCode-main\\VideoCode-main\\AgentNetCore\\Agent\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-08-19T13:57:20.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tools.cs",
+              "DocumentMoniker": "G:\\code\\VideoCode-main\\VideoCode-main\\AgentNetCore\\Agent\\Tools.cs",
+              "RelativeDocumentMoniker": "Tools.cs",
+              "ToolTip": "G:\\code\\VideoCode-main\\VideoCode-main\\AgentNetCore\\Agent\\Tools.cs",
+              "RelativeToolTip": "Tools.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T13:53:07.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReActAgent.cs",
+              "DocumentMoniker": "G:\\code\\VideoCode-main\\VideoCode-main\\AgentNetCore\\Agent\\ReActAgent.cs",
+              "RelativeDocumentMoniker": "ReActAgent.cs",
+              "ToolTip": "G:\\code\\VideoCode-main\\VideoCode-main\\AgentNetCore\\Agent\\ReActAgent.cs",
+              "RelativeToolTip": "ReActAgent.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T13:53:03.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PromptTemplate.cs",
+              "DocumentMoniker": "G:\\code\\VideoCode-main\\VideoCode-main\\AgentNetCore\\Agent\\PromptTemplate.cs",
+              "RelativeDocumentMoniker": "PromptTemplate.cs",
+              "ToolTip": "G:\\code\\VideoCode-main\\VideoCode-main\\AgentNetCore\\Agent\\PromptTemplate.cs",
+              "RelativeToolTip": "PromptTemplate.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T13:53:01.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\code\\VideoCode-main\\VideoCode-main\\AgentNetCore\\Agent\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "G:\\code\\VideoCode-main\\VideoCode-main\\AgentNetCore\\Agent\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T13:52:54.264Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
