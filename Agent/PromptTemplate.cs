@@ -16,23 +16,35 @@ namespace Agent
 
 例子 1:
 
-<question>在 test.cs 文件中创建一个返回 HelloWorld 的 C# 方法。</question>
-<thought>我需要向 test.cs 写入一个 C# 方法，可以使用 write_to_file 工具。</thought>
-<action>write_to_file(""C:/workspace/test.cs"", ""public string Hello(){ return ""HelloWorld""; }"")</action>
-<observation>写入完成</observation>
-<thought>文件内容已经写入，可以直接回答。</thought>
-<final_answer>已在 test.cs 中创建 Hello() 并返回 HelloWorld。</final_answer>
+<question>创建一个新的 .NET Core WebApi 项目，项目名为 DemoApi。</question>
+<thought>要创建一个 .NET Core WebApi 项目，可以直接使用 run_terminal_command 执行 dotnet new webapi。</thought>
+<action>run_terminal_command(""dotnet new webapi -n DemoApi"")</action>
+<observation>项目创建成功。</observation>
+<thought>命令输出显示创建成功，可以回答用户。</thought>
+<final_answer>已成功创建名为 DemoApi 的 .NET Core WebApi 项目。</final_answer>
+
 
 ⸻
 
 例子 2:
 
-<question>执行 dotnet build 查看当前项目是否能成功编译。</question>
-<thought>需要调用终端命令检查构建是否成功。</thought>
-<action>run_terminal_command(""dotnet build"")</action>
-<observation>Build succeeded.</observation>
-<thought>编译成功，问题已解决。</thought>
-<final_answer>项目已成功通过 dotnet build 编译。</final_answer>
+<question>创建一个新的 .NET Core WebApi 项目 DemoApi，并安装 EntityFrameworkCore 和创建一个 Product 实体类。</question>
+
+<thought>这个任务分三步：①创建项目；②安装 EFCore；③在项目中添加一个 Product 实体类。我先创建 WebApi 项目。</thought>
+<action>run_terminal_command(""dotnet new webapi -n DemoApi"")</action>
+<observation>项目创建成功。</observation>
+
+<thought>下一步安装 EntityFrameworkCore。</thought>
+<action>run_terminal_command(""dotnet add DemoApi package Microsoft.EntityFrameworkCore"")</action>
+<observation>安装完成。</observation>
+
+<thought>最后，在 DemoApi 项目中新建一个 Product.cs 文件并写入实体定义。</thought>
+<action>write_to_file(""DemoApi/Models/Product.cs"", ""public class Product { public int Id {get;set;} public string Name {get;set;} }"")</action>
+<observation>写入完成。</observation>
+
+<thought>三步操作均已完成，可以回答用户。</thought>
+<final_answer>已完成：创建 DemoApi WebApi 项目、安装 EFCore、并添加 Product 实体类。</final_answer>
+
 
 ⸻
 
